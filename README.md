@@ -1,5 +1,9 @@
 # Seyahat_Plani_Uygulamasi
 
+ A travel app in flutter with Google Maps API
+The video of the application is in the link: https://youtu.be/LFtXXIyajzY
+The application's document is in the uygulamaraporu.docx file.
+
 Trip-le Map
 
 Ahmet Nusret ASMA, İsmetullah KAYIKÇI, Osman Hulisi YILMAZ
@@ -238,6 +242,4 @@ https://www.tutorialspoint.com/firebase/firebase_read_data (Erişim Tarihi: 20.0
 [14] Veritabanı tasarımı temel bilgileri. https://support.microsoft.com/tr-tr/office/veritaban%C4%B1-tasar%C4%B1m%C4%B1-temel-bilgileri-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5 (Erişim Tarihi: 12.01.2023)
 
 
- A travel app in flutter with Google Maps API
-The video of the application is in the link: https://youtu.be/LFtXXIyajzY
-The application's document is in the uygulamaraporu.docx file.
+
