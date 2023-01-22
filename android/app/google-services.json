@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357739001581",
+    "project_id": "guglemebwitflutderr",
+    "storage_bucket": "guglemebwitflutderr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357739001581:android:82e7b1ba4cbcb917dafee4",
+        "android_client_info": {
+          "package_name": "com.example.gmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357739001581-850lctifovl4tj90mqe6gmn411ud472o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjmZRgwQ762MEN-B4d5oquDYtF4lq7n9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357739001581-850lctifovl4tj90mqe6gmn411ud472o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
