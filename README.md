@@ -10,7 +10,7 @@ Trip-le Map
 
 Ahmet Nusret ASMA, İsmetullah KAYIKÇI, Osman Hulisi YILMAZ
 
-Yazılım Mühendisliği, 3, A
+Yazılım Mühendisliği,
 
 Özet
 Teknoloji gün geçtikçe gelişmektedir ve günlük hayattaki bazı araçlara ulaşımı ve bu araçların kullanımını kolaylaştırmaktadır. Teknolojinin getirdiği güzelliklerden biri de mobil uygulamalar olmuştur. Haritalar istenilen bölge hakkında kullanıcıya bilgi veren önemli kaynaklardandır ve mobil uygulamalar ile kullanımı basitleşmiştir. Seyahat etmek her aşamasında kişiye öğretisi olan, zihnini açan, insanlara farklı açıdan bakmayı sağlayan bir süreçtir. Seyahat kavramı gün geçtikçe daha önemli bir hale gelmiştir. İlkokul döneminden itibaren süre gelmiş ev, araba hayali yerine artık seyahat kavramının ön plana çıktığı görülmektedir. Geliştirilen uygulamada kullanıcıların diledikleri iki yer arası en kısa mesafenin bulunması ve bulunan en kısa mesafe üzerindeki mekanlardan en yüksek puanlı olanının, kullanıcının rotasına ekleyebileceği bir uygulama hazırlanması amaçlanmıştır. 
