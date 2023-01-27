@@ -13,6 +13,7 @@ Ahmet Nusret ASMA, İsmetullah KAYIKÇI, Osman Hulisi YILMAZ
 Yazılım Mühendisliği,
 
 Özet
+
 Teknoloji gün geçtikçe gelişmektedir ve günlük hayattaki bazı araçlara ulaşımı ve bu araçların kullanımını kolaylaştırmaktadır. Teknolojinin getirdiği güzelliklerden biri de mobil uygulamalar olmuştur. Haritalar istenilen bölge hakkında kullanıcıya bilgi veren önemli kaynaklardandır ve mobil uygulamalar ile kullanımı basitleşmiştir. Seyahat etmek her aşamasında kişiye öğretisi olan, zihnini açan, insanlara farklı açıdan bakmayı sağlayan bir süreçtir. Seyahat kavramı gün geçtikçe daha önemli bir hale gelmiştir. İlkokul döneminden itibaren süre gelmiş ev, araba hayali yerine artık seyahat kavramının ön plana çıktığı görülmektedir. Geliştirilen uygulamada kullanıcıların diledikleri iki yer arası en kısa mesafenin bulunması ve bulunan en kısa mesafe üzerindeki mekanlardan en yüksek puanlı olanının, kullanıcının rotasına ekleyebileceği bir uygulama hazırlanması amaçlanmıştır. 
 
 Uygulama Dart programlama dilini kullanan Flutter araç takımı ile geliştirilmiştir. Kullanıcılardan bir hesap oluşturmaları veya misafir giriş yaparak uygulama ile etkileşime geçmeleri sağlanmıştır. Veri tabanı Firebase ile oluşturulmuştur. Kullanıcının rotaları kayıt ettiği ve sildiği bir sayfaya yönlendirilmiştir. Daha önceden kayıtlı bir rota seçerek uygulamayı kullanıma devam edebilmekte aynı zamanda yeni bir rota oluşturmak için harita sayfasını açabilmektedir. Google Haritalar API’si kullanılarak uygulamaya harita entegrasyonu yapılmıştır. Seçilen rota harita üzerinde gösterilmekte ve tavsiye edilen mekanlardan istediğini kullanıcı rotasına ekleme yapabilmektedir.
@@ -22,6 +23,7 @@ Hazırlanan uygulama harita uygulamalarına yeni bir tat katmıştır. Uygulama 
 Anahtar Kelimeler: Mobil, Flutter, Harita, Rota, Tavsiye mekanlar
  
 1. GİRİŞ
+
 	Teknoloji insan hayatını kolaylaştıran önemli unsurlardandır. Teknolojinin gelişmesi ile bazı araçlar günlük hayatımızın dışında kalırken bazı araçlarda teknolojiye ayak uydurarak kullanımını devam ettirmiştir. Harita bu araçlardan teknolojiye ayak uydurarak kendini gelişmiş teknolojik cihazlar içinde mobil uygulama olarak kullanabildiklerimizden olmuştur. Mobil uygulama, genellikle platforma özel uygulama mağazasından indirilen, akıllı telefon, tablet veya akıllı saat gibi mobil cihazlarda çalışması için hazırlanmış uygulama yazılımıdır[1].
 
 Harita yeryüzünü belirli ölçeklerde kuşbakışı olarak bir düzlem üzerinde gösterimidir[2]. Temel işlevi bölge hakkında kullanıcıya bilgi vermesidir. Haritalar tarih boyunca istenilen yer hakkında faydalı olabilecek bilgiler almak için kullanılmıştır. Harita başlarda sadece yaşanan savaşlar ile gelişmiş ancak sonrasında ilmi ve siyasi meselelerde de kullanılmaya başlamasıyla gelişmesi hızlanmıştır. Günümüzde ise özellikle turistik gezilerde, mevcut konum paylaşılmak istendiğinde, araştırılan yer veya mekanlar hakkında bilgi almak istendiğindeki gibi durumlarda haritalardan yardım alınmaktadır.
@@ -33,6 +35,7 @@ Seyahat, kişinin uzak iki yer arasında gerçekleştirdiği harekettir. Eğlenc
 Belirtilen uygulama bir mobil uygulama olup Dart programlama dili ile yazılmıştır. Dart programlama dili, 2011 yılında Google tarafından geliştirilmiş olup nesne programlama dili olarak tanımlanmaktadır[5]. Flutter, Google tarafından geliştirilmiş olan bir araç takımıdır ve bu araç takımının kullanımında Dart programlama dili kullanılmaktadır[6]. Flutter araç takımı, geliştiricilere aynı uygulamayı hem IOS hem Android’e uyumlu şekilde geliştirmeyi, bu sayede geliştiricilerin zamanlarından büyük bir zaman tasarrufu kazanmalarını sağlamaktadır. Geliştirilen uygulamanın harita tarafı Google haritalar API’si ile oluşturulmuştur. Google Haritalar (Google Maps), Google tarafından 8 Şubat tarihinde ticari amaçla hizmete sunulmuş birçok dil desteği olan ücretsiz bir çevrimiçi haritalama servisidir[7]. Uygulamanın veri tabanı kısmı Firebase ile hazırlanmıştır. Firebase, 2011 yılında bağımsız olarak kurulmuştur. Google 2014 yılında platformu satın almıştır. Firebase, mobil ve web uygulamaları oluşturmak için geliştirilmiş bir platformdur.
 
 2. KULLANILAN ARAÇLAR
+
 2.1 Firebase
 
 Firebase, mobil uygulamalar için düzenli veriler elde etmemizi sağlayan arka uç işletmesidir(backend bussines).Bunun yanında bulut hizmet sağlayıcı görevi de görmektedir. Günümüzde neredeyse tüm mobil uygulamaların kullanıcı doğrulaması ve güncellemelere ihtiyacı olduğundan bu durum bir hayli önemli bir husus olarak görülmektedir. Firebase’ın kullanımı kolaydır ve yeni başlayanlar için bile verilerin hızlı bir şekilde okunmasına ve yazılmasına olanak tanımaktadır.
@@ -48,27 +51,35 @@ Firebase, web uygulama platformu olarak kabul edilmektedir. Geliştiricilerin y�
 Firebase’in sağladığı hizmetler şunlardır:
 
 2.1.1 Firebase Analytics 
+
 Firebase Analytics, uygulama kullanımı hakkında bilgi sağlamaktadır. Ödemeli bir uygulama ölçüm çözümüdür ve kullanıcı etkileşimini de sağlamaktadır. Bu benzersiz özellik, uygulama geliştiricisinin kullanıcıların nasıl kullandıklarını anlamasına olanak tanımaktadır. SDK, kendi kendine olayları ve özellikleri yakalama özelliğine sahiptir ve ayrıca özel veri alma imkanı sunmaktadır.
 
 2.1.2 Firebase Cloud Messaging(FCM)
+
 Eski adı Google Clouds Messaging (GCM) olan FCM, Android, Web Uygulamaları ve iOS için mesajlar ve bildirimler için çapraz platform çözümü olan bir ücretli hizmet olarak kullanılmaktadır.
 
 2.1.3 Firebase Auth
+
 Firebase Auth, Facebook, Google, GitHub ve Twitter gibi sosyal giriş sağlayıcılarını desteklemektedir. Sadece istemci taraflı kod kullanarak kullanıcıları doğrulayan bir hizmettir ve ücretli bir hizmet olarak kullanılmaktadır. Aynı zamanda geliştiricilerin e-posta ve şifre girişi ile kullanıcı doğrulamasını Firebase'de saklanan kullanıcı yönetim sistemi de içermektedir. 
 
 2.1.4 Real-time Database
+
 Firebase gerçek zamanlı veri tabanı ve arka uç hizmetleri gibi hizmetler sunmaktadır. Uygulama geliştiricisine uygulama verilerinin Firebase'in bulutunda senkronize edilip saklandığı bir API sağlamaktadır. Şirket tarafından Android, IOS ve JavaScript uygulamaları ile entegrasyonu sağlamak için istemci kütüphaneleri sağlanmaktadır.
 
 2.1.5 Firebase Storage
+
 Firebase uygulamaları için ağ kalitesinden bağımsız olarak kolay ve güvenli dosya transferi sağlamaktadır. Google Cloud Storage tarafından desteklenir, bu maliyet etkili nesne depolama hizmeti olarak kullanılmaktadır. Geliştirici, resimleri, sesleri, videoları veya diğer kullanıcı oluşturduğu içerikleri saklamak için kullanabilmektedir.
 
 2.1.6 Firebase Test Lab for Android
+
 Android uygulamaları için bulut tabanlı bir altyapı sağlamaktadır. Bir işlem ile, geliştiriciler uygulamalarını çeşitli cihaz ve cihaz yapılandırmaları arasında test etmeye başlayabilmektedir. Ekran görüntüleri, videolar ve kayıtlar gibi çeşitli test sonuçları Firebase konsolunda mevcut olarak görülmektedir. Bir geliştirici uygulaması için herhangi bir test kodu yazmamış olsa bile, Test Lab otomatik olarak uygulamayı çalıştırabilir ve çökmelere bakabilmektedir.
 
 2.1.7 Firebase Crash Reporting
+
 Uygulamada hata raporları detaylı olarak oluşturulmaktadır. Hatalar benzer yığın izleri oluşan kümeler halinde gruplanır ve şiddetine göre değerlendirilmektedir. Diğer özellikler şunlardır: Geliştirici bir çökmenin neden olduğu adımları belirlemek için özel olayları kaydedebilmektedir.
 
 2.1.8 Firebase Notifications
+
 Mobil uygulama geliştiricileri için hedefli kullanıcı bildirimlerini etkinleştirir ve hizmetler ücretsiz olarak sunulmaktadır[9].
 
 
@@ -84,6 +95,7 @@ Mobil uygulama geliştiricileri için hedefli kullanıcı bildirimlerini etkinle
 
 
 Firebase Avantajları
+
 Başlaması ücretsizdir: Firebase, kullanıcıların Google hesaplarını kullanarak oturum açmasına olanak tanımaktadır. Spark Planı ücretsizdir ve geliştiricilerin başlamasına yardımcı olacak sayısız özellik sunmaktadır. Cömert bir veri tabanına sahiptir ve sayı limitlerini okur ve yazmaktadır. Blaze Planı, artan gereksinimlere göre seçilebilir ve orijinal serbest limitleri dikkate almaktadır. Örneğin, Blaze Planında 20 GB depolama alanı barındırıyorsanız, ücretsiz sınır 10 GB'ı kapsar ve yalnızca 10 GB'lık ek depolama alanı için ödeme yapmanız gerekmektedir.
 
 Geliştirme Hızı: Firebase, geliştiricilerin uygulama geliştirmede zamandan tasarruf etmelerine yardımcı olur ve ayrıca uygulamaları pazarlama süresini azaltmaktadır. Ön uç geliştiriciler, Firebase ve Firestore'u kullanarak tüm işi yönetebilir ve tamamlanması için gereken süreyi azaltabilmektedir. Ayrıca Firebase, geliştiricilerin standart kodlar oluşturmasını veya sıfırdan bir arka uç başlatmasını engelleyen kullanıma hazır hizmetler sunmaktadır.
@@ -91,6 +103,7 @@ Geliştirme Hızı: Firebase, geliştiricilerin uygulama geliştirmede zamandan 
 Sunucusuz – Firebase: kullanıcıların isteklere göre ödeme yapmasını gerektiren tamamen sunucusuz bir ortam sağlamaktadır. Bu, ölçeklendirme ve daha iyi verimlilikle ilgili daha az endişeye neden olmaktadır[11]. 
 
 2.2 Android Studio
+
 Android Studio ,Google'ın Android işletim sistemi için JetBrains'in IntelliJ IDEA yazılımı üzerine kurulu ve özellikle Android geliştirme için tasarlanmış resmi tümleşik geliştirme ortamı olarak tanımlanmaktadır (IDE ) . Windows , macOS ve Linux tabanlı işletim sistemlerinde indirilebilmektedir .Yerel Android uygulama geliştirme için birincil IDE olarak Eclipse Android Geliştirme Araçları'nın (E-ADT) yerini almıştır.
 
 Android Studio, 16 Mayıs 2013'te Google I/O konferansında duyurulmuştur. Mayıs 2013'te sürüm 0.1'den itibaren erken erişim ön izleme aşamasındaydı, ardından Haziran 2014'te yayınlanan sürüm 0.8'den itibaren beta aşamasına girmiştir. İlk kararlı yapı, sürüm 1.0'dan başlayarak Aralık 2014'te yayınlanmıştır. 2015'in sonunda Google, Eclipse ADT desteğini bırakarak Android Studio'yu Android geliştirme için resmi olarak desteklenen tek IDE haline getirmiştir[9].
@@ -101,6 +114,7 @@ Android Studio, Java, C++ gibi IntelliJ (ve CLion ) ile aynı programlama diller
 Bir uygulama Android Studio ile derlendikten sonra Google Play Store'da yayınlanabilmektedir. Uygulama, Google Play Store geliştirici içerik politikasına uygun olmalıdır ardından yayınlanabilmektedir[12].
 
 3. VERİTABANI TASARIMI
+
 Veri tabanı bilgisayar sistemlerinde elektronik olarak depolanan yapılandırılmış bilgilerden veya veriden oluşan düzenli bir koleksiyondur. Veri tabanı DBMS (Veri Tabanı Yönetim Sistemi) ile kontrol edilmektedir. Veri tabanı sistemi veri, DBMS ve bunlarla ilişkili uygulama yazılımlarının bir araya getirilmesine denmektedir. 
 
  	Veri tabanları ilk olarak 1960’lı yılların başlarında ortaya çıkmıştır ve radikal bir evrim süreci geçirmiştir. Hiyerarşik veri tabanı gibi navigasyonel veri tabanları ve ağ veri tabanı, verileri depolamak ve değiştirmek üzere kullanılan orijinal sistemler olarak geliştirilmiştir. 1980'li yıllarda ilişkisel veri tabanları popüler olmuştur ve ardından 1990'lı yıllarda nesne odaklı veri tabanları ortaya çıkmıştır. Yakın zamanda ise, internetin büyümesi ve yapılandırılmamış verilerin hızlı bir şekilde işlenmesi gibi ihtiyaçları karşılamak için NoSQL veri tabanları kullanılmaya başlanılmıştır. Günümüzde kendi kendini yöneten veri tabanları ve bulut veri tabanları depolama, veri toplama, yönetme ve kullanma konusunda çığır açmıştır[13].
@@ -117,9 +131,11 @@ Açıklanan veri tabanı modelinin tablo görünümü Şekil2’de gösterilmiş
 
 
 4. MODÜLLER
+
 4.1.Modüller
 
 4.1.1.google_maps_flutter (2.2.2):
+
  Bu paket Google Maps API, harita tabanlı farklı amaçlı çözümlerde kullanılan Google Maps Developer Console‘da bulunan hazır kodlardan oluşmaktadır.
 
 Chicagocrime.org ve konutmaps.com gibi tersine mühendislik ürünü karmaların başarısından sonra, Google, geliştiricilerin Google Haritalar'ı web sitelerine entegre etmelerine olanak sağlamak için Haziran 2005'te Google Haritalar API'sini piyasaya sürmüştür. API anahtarı gerektirmeyen ücretsiz bir hizmetti ve Haziran 2018'de (değişiklikler 16 Temmuz'da yürürlüğe girdi), API'ye erişmek için faturalandırmanın etkinleştirildiği bir Google Cloud hesabına bağlı bir API anahtarının gerekli olacağı duyurulmuştu. API şu anda reklam içermiyor, ancak Google kullanım koşullarında gelecekte reklam gösterme hakkını saklı tuttuklarını belirtmektedir.
@@ -128,13 +144,16 @@ Google Haritalar API'sini kullanarak, Google Haritalar'ı, üzerine siteye özg�
 
 Google Maps API, kullanıldığı sitenin herkesin erişimine açık olması ve erişim için ücret almaması ve günde 25.000'den fazla harita erişimi sağlamaması koşuluyla ticari kullanım için ücretsiz olarak kullanıma açmıştır. Bu gereksinimleri karşılamayan siteler, İşletmeler için Google Haritalar API'sini satın alabilmektedir.
 
-4.1.2.flutter_polyline_points(1.0.0): Bu paket Flutter uygulamalarında Google Maps API kullanırken, kullanıcının belirli bir rotayı takip etmesini sağlamak için kullanılabilecek bir paket olarak kullanılmaktadır. Bu paket, kullanıcının belirli bir rotayı takip etmesine veya bir yol haritasına göstermesine olanak tanımaktadır.
+4.1.2.flutter_polyline_points(1.0.0): 
+
+ Bu paket Flutter uygulamalarında Google Maps API kullanırken, kullanıcının belirli bir rotayı takip etmesini sağlamak için kullanılabilecek bir paket olarak kullanılmaktadır. Bu paket, kullanıcının belirli bir rotayı takip etmesine veya bir yol haritasına göstermesine olanak tanımaktadır.
 
 Bu paket, Google Maps API tarafından sağlanan koordinatlar arasındaki bir çizgi oluşturmak için kullanılmaktadır. Bu çizgi, verilen koordinatlar arasındaki en kısa rotayı temsil etmektedir. Bu sayede, kullanıcının rotayı takip etmesi veya yol haritasına bakması kolaylaştırmaktadır.
 
 Ayrıca, bu paket ile çizgi renkleri, genişlikleri ve stilleri de özelleştirilebilmektedir. Böylece, kullanıcıların daha iyi anlaması için rota görsel olarak daha anlaşılır hale getirilebilmektedir.
 
 4.1.3.location_distance_calculator(0.0.2):
+
  Bu paket Flutter uygulamalarında kullanılmaktadır. Bu paket, iki koordinat arasındaki mesafeyi hesaplamak için kullanılmaktadır. Bu paket, Haversine Formülünü kullanarak iki koordinat arasındaki mesafeyi hesaplamaktadır. Bu formül, dünya yüzeyinin bir küresi olarak kabul edilmesiyle çalışır ve iki nokta arasındaki yörüngeler arasındaki açıyı kullanarak mesafeyi hesaplamaktadır.
 
 Bu paket ayrıca, iki koordinat arasındaki yönü de hesaplamaktadır. Bu sayede, kullanıcının rotayı takip etmesi veya yol haritasına bakmasını kolaylaştırmaktadır. Ayrıca, bu paket ile hesaplanan mesafe ve yön birimi olarak mil veya km olarak seçilebilmektedir.
@@ -142,6 +161,7 @@ Bu paket ayrıca, iki koordinat arasındaki yönü de hesaplamaktadır. Bu sayed
 Bu paket, navigasyon uygulamaları, turlar, seyahat planlaması gibi uygulamalarda kullanılabilmektedir. Örneğin, bir kullanıcının seyahat planlaması yaparken, iki farklı konum arasındaki mesafeyi ve yönü öğrenmesi için kullanabilmektedir.
 
 4.1.4.firebase_auth(4.2.0):
+
  Firebase Auth, Firebase'in bir parçası olarak kullanılan bir kimlik doğrulama hizmeti olarak kullanılmaktadır. Bu hizmet, mobil ve web uygulamaları için kullanıcı hesaplarının oluşturulmasını, kimlik doğrulamasını ve yönetilmesini kolaylaştırmaktadır. Firebase Auth, çeşitli kimlik sağlayıcılarını (örneğin: Google, Facebook, Twitter, vb.) kullanarak kullanıcıların giriş yapmasını ve hesaplarını oluşturmasını sağlamaktadır.
 
 Firebase Auth, kullanıcıların kimliğini doğrulamak için e-posta ve şifre ile giriş yapmalarını veya hızlı bir şekilde giriş yapmalarını sağlamaktadır (örneğin: telefon numarası ile doğrulama veya sosyal medya hesapları ile giriş yapma). Ayrıca, Firebase Auth, kullanıcıların şifrelerini unutmaları durumunda şifre sıfırlama işlemlerini otomatik olarak gerçekleştirmektedir.
@@ -151,6 +171,7 @@ Firebase Auth, kullanıcıların kimliğini doğruladıktan sonra, uygulamaya er
 Firebase Auth, kullanıcıların kimliğini doğrulamak için yerel olarak saklamak yerine Firebase veri tabanında saklamaktadır. Bu, uygulamanın kullanıcıların kimliği hakkında daha az bilgi saklamasını ve daha iyi güvenliği sağlamaktadır.
 
 4.1.5.firebase_core(2.4.0):
+
  Firebase Core paketi, Firebase'in bir parçası olarak kullanılmaktadır. Bu paket, Firebase hizmetlerini kullanmak için gerekli olan temel yapıları sağlamaktadır. Firebase Core, Firebase projesine bağlanmakta, Firebase hizmetlerinin yapılandırılması ve kullanılması için gerekli olan API anahtarlarının yönetilmesini sağlamaktadır.
 
 Firebase Core, Firebase hizmetleri arasında veri tabanı, storage, auth, push notification gibi hizmetleri kullanmak için gerekli olan temel yapıları sağlamaktadır. Bu sayede, uygulama geliştiricileri Firebase hizmetlerini kullanabilirken, Firebase Core aracılığıyla Firebase hizmetleri arasında geçiş yapabilmektedir.
@@ -158,6 +179,7 @@ Firebase Core, Firebase hizmetleri arasında veri tabanı, storage, auth, push n
 Firebase Core paketi, Firebase hizmetleri arasında bağlantı sağlamak için kullanılmaktadır. Bu sayede, uygulama geliştiricileri Firebase hizmetlerini tek bir noktadan yönetebilir ve kullanabilmektedir. Firebase Core paketi, uygulama geliştiricilerinin Firebase hizmetleri arasında daha kolay geçiş yapmasını ve Firebase hizmetlerini daha verimli kullanmasını sağlamaktadır.
 
 4.1.5.cloud_firestore(4.2.0):
+
 Cloud Firestore, Firebase'in bir veri tabanı hizmeti olarak kullanılmaktadır. Bu hizmet, mobil ve web uygulamaları için veri depolama ve yönetimi için kullanılmaktadır. Cloud Firestore, verileri NoSQL (Not Only SQL) formatında saklar ve böylece verilerin yapısının esnek olmasını sağlamaktadır.
 
 Cloud Firestore, verileri koleksiyonlar ve belgeler olarak saklamaktadır. Koleksiyonlar, verilerin gruplandırılmasını sağlar ve belgeler ise koleksiyonlar içinde saklanan verileri temsil etmektedir. Bu yapı, verilerin hiyerarşik olarak saklanmasını ve yönetilmesini kolaylaştırmaktadır.
@@ -169,44 +191,59 @@ Cloud Firestore, kullanıcı yetkilendirmesini Firebase Auth ile birlikte kullan
 4.2.Sayfalar
 
 4.2.1.login_Page.dart:
+
 Bu sayfada kullanıcının giriş yapma işlemi ve kayıt olması için giriş sayfası oluşturulmuştur. Kullanıcının girdiği e-posta ve şifre ile oturum açmasını sağlamaktadır. Eğer kullanıcının kullanıcı ve şifre bilgisi yoksa kullanıcı kayıt ol butonuyla kayıt olma sayfasına giderek kayıt olma işlemini gerçekleştirmektedir. Kullanıcı anonim giriş özelliğini kullanarak herhangi bir bilgi girmeden uygulamaya erişebilmektedir.
 
 4.2.2.signUp.dart:
+
 Kullanıcı bu sayfada e-mail ve şifre bilgilerini oluşturarak kayıt olma işlemini gerçekleştirmektedir.
 
 4.2.3.simple_map.dart:
+
 Kullanıcı bu sayfada Harita üzerinde işlemler yapabilmektedir. Harita üzerinde seçtiği 2 konumu işaretleyebilmektedir. İşaretlediği 2 konum arasında en kısa mesafeyi göstermektedir. Bu 2 konum arası uzaklığı km cinsinden görebilmektedir. Seçilen 2 konum arasında mekan puanlamasına göre önerilen mekanları görebilmektedir. Bu işlemi yapabilmesi için “mekan öner” butonuna tıklaması yeterlidir. Ayrıca kullanıcı bu ekranda işaretlediği rotayı “rotayı kaydet” butonuyla kaydedebilmektedir. Ayrıca mekan öner sayfasındaki mekanlar puanlaması yüksek olan mekanlara göre gelmektedir. Seçtiği mekana tıklayarak bulunduğu konum ile gitmek istediği mekan arası rotayı ve mesafeyi göstermektedir. Daha sonra “bir sonraki rotaya geç” butonuyla seçili mekandan gitmek istediği konuma gitmektedir.
 
 4.2.4.ilkrotas1.dart:
+
  Seçilen ilk mekan için başlangıç ile gitmek istenen mekan arasındaki en kısa yol ve mesafe işlemlerini gerçekleştirmektedir.
 
 4.2.5.ilkrotas2.dart:
+
 Bu sayfa seçilen ilk mekan ile gitmek istenen konum arasındaki mesafe ve en kısa yol işlemlerini gerçekleştirmektedir.
 
 4.2.6.ikincirotas2.dart:
+
 Bu sayfa Seçilen 2.mekan için başlangıç ile gidilmek istenen mekan arasında en kısa yol ve mesafe işlemlerini gerçekleştirmektedir.
+
 4.2.7.ikincirotas2.dart:
+
 Bu sayfa seçilen ikinci mekan ile gitmek istenen konum arasındaki mesafe ve en kısa yol işlemlerini gerçekleştirmektedir.
 
 4.2.8.mekan.dart:
+
 Veri tabanında oluşturulmuş mekanları uygulamada kullanmak üzere uygulamaya çekme işlemini gerçekleştirmektedir.
 
 4.2.9.kayitlirota.dart:
+
 Bu sayfa oluşturulan rotaları kaydettikten sonra veri tabanına ekleyip kayıtlı rotalar sayfasında kayıtlı verileri yazdırma işlemini ve silme işlemini gerçekleştirmektedir.
 
 4.2.10.mekan_model.dart:
+
 Veri tabanında oluşturulan mekanlar tablosunun “adı”,”puanı”,”lat”,“lon” bilgilerinin modelidir.
 
 4.2.11.konumkayit.dart:
+
 Veri tabanında oluşturulan rotalar tablosunun “lat1”,”lat2”,”lat3”,”lat4” bilgilerinin modelidir.
 
 4.2.12.custom_text_button.dart:
+
 Sayfalardaki butonları özelleştirme işlemlerinde çağrılmak üzere kullanılmaktadır.
 
 4.2.13.customColor.dart:
+
 Bu sayfada "CustomColors" sınıfı, renk değerlerini Color nesneleri biçiminde depolayan statik değişken tanımlar. Bu değerlere, "CustomColors.darkColor" gibi değişken adına başvurarak uygulama genelinde erişilebilir ve kullanılabilmek üzere oluşturulmuştur. 
 
 5. SONUÇ
+
 Mobil cihazlarda pek çok harita uygulaması bulunmaktadır. Bu uygulamaların içerisinde konum seçme, iki konum arası rota oluşturma gibi özellikler bulunmaktadır. Hazırlanan uygulama, hali hazırda kullanılan harita uygulamalarına ek mekan tavsiyesi vermektedir. Bu uygulamada, Dart programlama dili ve Flutter araç takımı kullanılarak bir mobil harita uygulaması gerçekleştirilmiştir. Yapılan uygulamanın veri tabanı kısmı için Firebase kullanılmıştır.
 
 Uygulama içerisinde kullanıcılardan bir hesap oluşturmaları veya misafir giriş yaparak uygulama ile etkileşime geçmeleri sağlanmıştır. Giriş yapan kullanıcı rotaları kayıt ettiği ve sildiği bir sayfaya yönlendirilmiştir. Kullanıcı daha önceden kayıtlı bir rota seçerek uygulamayı kullanıma devam edebilmekte aynı zamanda yeni bir rota oluşturmak için harita sayfasını açabilmektedir. Google Haritalar API’si kullanılarak uygulamaya harita entegrasyonu yapılmıştır. Kullanıcı harita üzerine uzun tıklayarak ilk konumu ardından da ikinci konumu seçebilmektedir. Seçilen iki konum arası en kısa mesafe uygulama tarafından çizilmektedir. Çizilen rota harita üzerinde gösterilmekte ve bu rota üzerinde bulunan veya rota yakınında bulunan puanı diğer mekanlardan yüksek iki mekan kullanıcıya önerilmektedir. Kullanıcı tavsiye edilen mekanlardan istediğini rotasına ekleyerek önce başlangıç konumundan mekana ve sonrasında mekandan bitiş noktasına yeni rota uygulama tarafından çizilmektedir. Kullanıcı isterse başlangıç ve bitiş konumlarını daha sonra tekrar kullanmak üzere kayıt edebilmektedir. 
